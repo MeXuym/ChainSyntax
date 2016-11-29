@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Human.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    Human *man = [[Human alloc]init];
+    man.run(1).run(2).run(3).run(4).run(5);
 }
 
 - (void)didReceiveMemoryWarning {
